@@ -30,10 +30,11 @@ img{display:block;max-width:100%}
 
 header{position:sticky;top:0;z-index:50;background:rgba(11,25,62,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
-.brand{font-family:'Anton';font-size:18px;text-transform:uppercase;letter-spacing:1.5px;color:var(--cream);white-space:nowrap}
+.brand{font-family:'Anton';font-size:18px;text-transform:uppercase;letter-spacing:1.5px;color:var(--cream);white-space:nowrap;text-decoration:none;cursor:pointer}
+.brand:hover{color:var(--gold)}
 .navlinks{display:flex;gap:26px;font-size:14px;color:var(--muted);margin-left:auto}
 .navlinks a:hover{color:var(--cream)}
-.langsel{display:flex;gap:4px;border:1px solid var(--line);border-radius:999px;padding:3px}
+.langsel{display:flex;gap:4px;border:1px solid var(--line);border-radius:999px;padding:3px;position:relative;z-index:20}
 .langsel button{font-family:'JetBrains Mono';font-size:11px;background:none;border:none;color:var(--muted);padding:5px 9px;border-radius:999px;cursor:pointer;letter-spacing:.5px}
 .langsel button.active{background:var(--gold);color:var(--navy)}
 .menubtn{display:none;background:none;border:none;color:var(--cream);cursor:pointer}
@@ -193,11 +194,11 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:v
 }
 </style>
 </head>
-<body>
+<body id="top">
 
 <header>
   <nav class="wrap">
-    <div class="brand">JOÃO PEDRO IZZO</div>
+    <a href="#top" class="brand" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">JOÃO PEDRO IZZO</a>
     <div class="navlinks">
       <a href="#sobre" data-i="nav_about">Sobre</a>
       <a href="#jornada" data-i="nav_journey">Experiência</a>
