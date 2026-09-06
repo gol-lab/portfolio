@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experiência — João Pedro Izzo</title>
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body id="top">
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand">JOÃO PEDRO IZZO</a>
+    <div class="navlinks">
+      <a href="sobre.html" data-i="nav_about">Sobre</a>
+      <a href="experiencia.html" class="active" data-i="nav_journey">Experiência</a>
+      <a href="conteudos.html" data-i="nav_content">Conteúdos</a>
+      <a href="gollab.html">GOL LAB</a>
+      <a href="contato.html" data-i="nav_contact">Contato</a>
+    </div>
+    <div class="langsel">
+      <button data-lang="pt">PT</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="es">ES</button>
+    </div>
+    <button class="menubtn" id="menubtn" aria-label="Menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="sobre.html" data-i="nav_about">Sobre</a>
+    <a href="experiencia.html" data-i="nav_journey">Experiência</a>
+    <a href="conteudos.html" data-i="nav_content">Conteúdos</a>
+    <a href="gollab.html">GOL LAB</a>
+    <a href="contato.html" data-i="nav_contact">Contato</a>
+  </div>
+</header>
+<main>
+  <div class="wrap page-head reveal">
+    <a class="back-link" href="index.html">← <span data-i="back_home">Início</span></a>
+    <span class="eyebrow" data-i="journey_eyebrow">Trajetória</span>
+    <h1 data-i="journey_title">Experiência profissional</h1>
+    <p data-i="exp_page_sub">Da produção de conteúdo baseado em dados à liderança de marketing em algumas das marcas mais competitivas do esporte e do iGaming.</p>
+  </div>
+  <section>
+    <div class="wrap">
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+</main>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

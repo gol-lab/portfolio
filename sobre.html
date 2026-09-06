@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sobre — João Pedro Izzo</title>
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body id="top">
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand">JOÃO PEDRO IZZO</a>
+    <div class="navlinks">
+      <a href="sobre.html" class="active" data-i="nav_about">Sobre</a>
+      <a href="experiencia.html" data-i="nav_journey">Experiência</a>
+      <a href="conteudos.html" data-i="nav_content">Conteúdos</a>
+      <a href="gollab.html">GOL LAB</a>
+      <a href="contato.html" data-i="nav_contact">Contato</a>
+    </div>
+    <div class="langsel">
+      <button data-lang="pt">PT</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="es">ES</button>
+    </div>
+    <button class="menubtn" id="menubtn" aria-label="Menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="sobre.html" data-i="nav_about">Sobre</a>
+    <a href="experiencia.html" data-i="nav_journey">Experiência</a>
+    <a href="conteudos.html" data-i="nav_content">Conteúdos</a>
+    <a href="gollab.html">GOL LAB</a>
+    <a href="contato.html" data-i="nav_contact">Contato</a>
+  </div>
+</header>
+<main>
+  <div class="wrap page-head reveal">
+    <a class="back-link" href="index.html">← <span data-i="back_home">Início</span></a>
+    <span class="eyebrow" data-i="about_eyebrow">Quem sou</span>
+    <h1 data-i="about_title">Um perfil camaleão</h1>
+    <p data-i="about_sub">Circulo entre conteúdo, dado, estratégia comercial e marca — e entrego em frentes onde a maioria escolhe só uma.</p>
+  </div>
+  <section>
+    <div class="wrap">
+      <div class="about reveal">
+        <div>
+          <p data-i="about_p1">Profissional de marketing com mais de 8 anos liderando iniciativas de branding, growth e marketing comercial nos segmentos de esporte, entretenimento e iGaming.</p>
+          <p data-i="about_p2">Histórico em gestão de patrocínios, marketing de influência, compra de mídia, parcerias estratégicas e campanhas integradas — conectando construção de marca à geração de resultados de negócio, com equipes multidisciplinares e stakeholders executivos.</p>
+          <div class="tags">
+            <span class="tag">Growth</span><span class="tag">Branding</span><span class="tag" data-i="t_spons">Patrocínios</span>
+            <span class="tag" data-i="t_infl">Influência</span><span class="tag" data-i="t_activ">Ativações</span><span class="tag" data-i="t_media">Mídia</span>
+            <span class="tag" data-i="t_content">Conteúdo</span><span class="tag" data-i="t_partner">Parcerias</span><span class="tag" data-i="t_kpi">KPIs</span>
+            <span class="tag" data-i="t_product">Produto</span><span class="tag" data-i="t_data">Dados</span>
+          </div>
+        </div>
+        <div class="facts">
+          <div class="fact"><span class="k" data-i="f_base">Baseado em</span><span class="v">São Paulo, Brasil</span></div>
+          <div class="fact"><span class="k" data-i="f_edu">Formação</span><span class="v" data-i="f_edu_v">Jornalismo · Universidade Presbiteriana Mackenzie</span></div>
+          <div class="fact"><span class="k" data-i="f_now">Agora</span><span class="v" data-i="f_now_v">MBA · Marketing, Branding & Performance · Saint Paul Escola de Negócios</span></div>
+          <div class="fact"><span class="k" data-i="f_cert">Certificação</span><span class="v" data-i="f_cert_v">Licença A — Análise de Desempenho Profissional · CBF Academy</span></div>
+          <div class="fact"><span class="k" data-i="f_lang">Idiomas</span><span class="v" data-i="f_lang_v">PT nativo · ENG avançado · ESP básico</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i="skills_eyebrow">Como eu trabalho</span>
+      <h2 class="display" data-i="skills_title">Skills & Ferramentas</h2>
+      <p data-i="skills_sub">Não é só a lista — é como uso cada uma no dia a dia, do dado à entrega.</p>
+    </div>
+    <div class="skillgrid reveal" id="skillgrid"></div>
+  </div>
+</section>
+</main>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
